@@ -1,5 +1,253 @@
 body{
-  font-family: sans-serif;
-  font:  'helvetica';
-  
+  font-family: 'Abril Fatface';
+ margin-left: 0px;
+ margin-right: 0;
+ margin-top: 0;
+ margin-bottom: 0;
+width: 100%;
+height: auto;
+
+}
+
+#wrapper{
+overflow-x: hidden;
+}
+#logo{
+width: 10%;
+padding: 2em;
+
+}
+#lab{
+  text-align: right;
+  margin-top: -10%;
+  margin-left: 45%;
+  font-size: 19px;
+  font-weight: lighter;
+}
+#studio{
+  text-align: right;
+  margin-top: -10%;
+  margin-left: 35%;
+  font-size: 19px;
+  font-weight: lighter;
+}
+#contact{
+  text-align: right;
+  margin-top: -10%;
+  margin-left: 25%;
+  font-size: 19px;
+  font-weight: lighter;
+}
+
+h1{
+  position: relative;
+  color: #FF4F6A;
+  font-size: 700%;
+  line-height: 97%;
+margin-left: 20%;
+margin-top: 3%;
+}
+
+
+.Iam {
+  padding: 2em 5em;
+  font: normal 40px/50px 'Abril Fatface';
+  color: black;
+  font-weight: bold;
+  font-size: 300%;
+  margin-left: 4%;
+  margin-top: -6%;
+}
+.Iam p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 63px;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #CCCBC8;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+-webkit-animation:move 5s;
+   -moz-animation:move 5s;
+    -ms-animation:move 5s;
+     -o-animation:move 5s;
+        animation:move 5s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+   -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+     -o-animation-delay:1s;
+        animation-delay:1s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+p{
+  font-family: 'Khula', sans-serif;
+  font-size: 30%;
+  color: #8C8B89;
+  line-height: 130%;
+  position: absolute;
+  margin-top: 15%;
+  margin-left: -.5%;
+  width: 50%;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+
+.container1 {
+  position: relative;
+  width: 50%;
+  margin-top: 48%;
+
+}
+
+.container2 {
+  position: relative;
+  width: 55%;
+  margin-left: 64%;
+  margin-top: -32%;
+
+}
+.container3 {
+  position: relative;
+  width: 60%;
+  margin-top: -30%;
+  margin-bottom: 10%;
+
+
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FF4F6A;
+  opacity: .8;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+
+}
+
+.container1:hover .overlay {
+  width: 100%;
+
+}
+.container2:hover .overlay {
+  width: 100%;
+
+}
+.container3:hover .overlay {
+  width: 105%;
+
+}
+
+.text {
+  font-family: 'Khula', sans-serif;
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+}
+
+
+
+#back{
+font-family: 'Khula', sans-serif;
+font-size: 30%;
+margin-left: 30%;  margin-left: -7%;
+  text-decoration: none;
+  color: black;
+  font-size: 30%;
+  font-family: 'Khula', sans-serif;
+  margin-top: 60%;
+  margin-left: 5%;
+  width: 20%;
+
+
 }
