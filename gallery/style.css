@@ -24,13 +24,13 @@ font-weight: 300;
 h2{
   text-align: center;
   color: white;
-  font-size:200%;
-font-weight: 300;
+  font-size: 200%;
+  font-weight: 300;
   padding: 1%;
   margin-top: -6%;
 }
 .gallery {
-  width:52%;
+  width:62%;
   height: auto;
   margin: 0 auto;
   padding: 2%;
@@ -45,10 +45,9 @@ font-weight: 300;
   padding: 1%;
 }
 
-.gallery > div >a img  {
-  display: block;
-  width: 300px;
-  padding: 8%;
+.gallery > div >a img {
+  width: 340px;
+  padding: 5%;
   transition: .1s transform;
   transform: translateZ(0);
 }
