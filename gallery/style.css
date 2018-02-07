@@ -46,10 +46,11 @@ h2{
 }
 
 .gallery > div >a img {
-  width: 340px;
+  width: 335px;
   padding: 5%;
   transition: .1s transform;
   transform: translateZ(0);
+  margin-left: 9%;
 }
 
 .gallery > div:hover {
