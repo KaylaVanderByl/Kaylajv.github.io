@@ -31,6 +31,8 @@ padding: 2em;
   font-size: 19px;
   font-weight: lighter;
 }
+
+
 #contact{
   text-align: right;
   margin-top: -10%;
@@ -39,15 +41,15 @@ padding: 2em;
   font-weight: lighter;
 }
 
-#lab :hover{
-  text-decoration: underline;
-}
-
-#studio :hover{
+#studio:hover{
   text-decoration: underline;
 }
 
 #contact:hover{
+  text-decoration: underline;
+}
+
+#lab:hover{
   text-decoration: underline;
 }
 

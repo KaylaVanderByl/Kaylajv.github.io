@@ -1,0 +1,100 @@
+body{
+  font-family: 'Raleway', sans-serif;
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+height: 100%;
+width: 100%;
+}
+
+#wrapper{
+position: relative;
+  font-size: 200%;
+  font-weight: bold;
+  overflow-x: hidden;
+}
+#current{
+margin-left: 66%;
+text-decoration: none;
+color: black;
+}
+
+#current:hover{
+text-decoration: underline;
+}
+#home{
+  text-decoration: none;
+  color: black;
+  margin-left: 1%;
+}
+
+#home:hover{
+  text-decoration: underline;
+}
+#pages{
+  padding:2.4%;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.goals {
+  font-size: 600%;
+  font-weight: bold;
+  color: transparent;
+  text-align: center;
+  height: 10%;
+  line-height:250%;
+  text-shadow: 0 0 #000;
+  animation: an 2s;
+}
+@keyframes an {
+  0% {text-shadow: 0 100vh 60px #000;}
+  80% {text-shadow: 0 0 3px #000;}
+  100% {text-shadow: 0 0 0px #000;}
+}
+
+#ambitions{
+  font-size: 200%;
+  width: 40%;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 20%;
+  font-weight: 600;
+}
+
+#color{
+  color: #FFD91F;
+}
+
+#mag{
+  position: absolute;
+padding: 3em;
+width: 30%;
+}
+
+
+#vogue{
+  margin-left: 40%;
+  margin-top: 30%;
+  position: absolute;
+  padding: 3em;
+  width: 30%;
+
+}
+
+#quote{
+  position: absolute;
+  font-size: 400%;
+  margin-top: 50%;
+  width: 40%;
+  padding: 3em;
+  font-weight: 600;
+  margin-left: 5%;
+  color:#FFD91F;
+}
+
+#san{
+  position: relative;
+  width: 50%;
+}
