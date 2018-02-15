@@ -224,7 +224,7 @@ position: relative;
   text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
 }
 svg {
-  overflow-x: hidden;
+
     margin: auto;
     max-height: 160%;
     max-width: 150%;
@@ -234,7 +234,7 @@ svg {
   }
 
   .wave {
-      overflow-x: hidden;
+
     stroke: #fff;
     fill: black;
     stroke-width: 2px;
@@ -449,17 +449,19 @@ svg {
     color: white;
     text-decoration: none;
     font-size: 140%;
+    padding:.2em;
 
   }
 
   #footer2{
 margin-top: 40%;
     z-index: 100000;
-    margin-left: 75%;
+    margin-left: 72%;
     font-size: 140%;
     color: white;
     width: 100%;
     text-decoration: none;
+    padding:.2em;
   }
 
 #footer:hover{
