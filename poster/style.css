@@ -230,7 +230,7 @@ svg {
     max-width: 150%;
     position: absolute;
     z-index: -100;
-    margin-left: -50%;
+    margin-left: -51%;
   }
 
   .wave {
