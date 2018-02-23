@@ -1,0 +1,626 @@
+
+body {
+  background: pink;
+  font-family: 'Helvetica', sans-serif;
+}
+#home{
+text-align: right;
+padding-right: 2em;
+text-decoration: none;
+font-size: 150%;
+font-weight: bold;
+padding-top: 1em;
+color: white;
+
+}
+
+#home2{
+  text-decoration: none;
+}
+
+#home2:hover{
+  text-decoration: underline;
+  color: white;
+}
+.music-player-container {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  height: 370px;
+  position: absolute;
+  min-width: 400px;
+  left: 50%;
+  top: 50%;
+}
+.music-player-container:after {
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: -2px;
+  content: ' ';
+  display: block;
+  height: 10px;
+  left: 19px;
+  position: absolute;
+  transform: rotate(-3deg);
+  width: 60%;
+  z-index: 0;
+}
+
+.music-player {
+  background-color: #fff;
+  height: 370px;
+  margin-top: -6%;
+  padding: 40px 250px 40px 40px;
+  position: absolute;
+  text-align: right;
+  width: 180px;
+  z-index: 3;
+}
+
+.player-content-container {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  position: relative;
+}
+
+
+.album {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.65);
+  height: 315px;
+  margin-left: 250px;
+  margin-top: 27px;
+  position: relative;
+  width: 315px;
+  z-index: 10;
+}
+
+.album-art {
+  background: #fff url("https://images.complex.com/complex/images/c_fill,g_center,w_1200/fl_lossy,pg_1,q_auto/abzaloukqwz79emqtm01/kali-uchis-after-the-storm") center/cover no-repeat;
+  height: 315px;
+  position: relative;
+  width: 315px;
+  z-index: 10;
+}
+
+.vinyl {
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/83141/vinyl.png"), url("https://images.complex.com/complex/images/c_fill,g_center,w_1200/fl_lossy,pg_1,q_auto/abzaloukqwz79emqtm01/kali-uchis-after-the-storm");
+  background-position: center, center;
+  background-size: cover, 40% auto;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 300px;
+  z-index: 5;
+  will-change: transform, left;
+}
+.is-playing .vinyl {
+  left: 52%;
+}
+
+.music-player-controls {
+  text-align: center;
+}
+
+[class^="control-"] {
+  -webkit-filter: brightness(95%);
+  filter: brightness(95%);
+  border-radius: 100%;
+  display: inline-block;
+  height: 44px;
+  margin: 0 3px;
+  width: 44px;
+}
+[class^="control-"]:hover {
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
+  cursor: pointer;
+}
+
+.control-play {
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/83141/play.svg") center/cover no-repeat;
+}
+.is-playing .control-play {
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/83141/pause.svg") center/cover no-repeat;
+}
+
+.control-forwards {
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/83141/forwards.svg") center/cover no-repeat;
+}
+
+.control-back {
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/83141/backwards.svg") center/cover no-repeat;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.ouamburger {
+    position: fixed;
+    z-index: 50000;
+    top: 16px;
+    left: 16px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width:660px) {
+    .ouamburger {
+        top: 12px;
+        left: 12px;
+        width: 44px;
+        height: 44px
+    }
+}
+
+.ouamburger div {
+    width: 26px;
+    height: 4px;
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transition: .25s
+}
+
+.slug--Projects:not(.work__scrolled) .ouamburger div {
+    background: white;
+}
+
+.in-transition .ouamburger div, .js-nav-active .ouamburger div {
+    background: pink !important
+}
+
+.ouamburger div:nth-child(1) {
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%
+}
+
+.ouamburger div:nth-child(2) {
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%
+}
+
+.ouamburger div:nth-child(3) {
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%
+}
+
+.ouamburger div:nth-child(5) {
+    transition-delay: 0s
+}
+
+.ouamburger div:nth-child(4) {
+    transition-delay: 50ms
+}
+
+.ouamburger div:nth-child(3) {
+    transition-delay: .1s
+}
+
+.ouamburger div:nth-child(2) {
+    transition-delay: .15s
+}
+
+.ouamburger div:nth-child(1) {
+    transition-delay: .2s
+}
+
+.ouamburger div:nth-child(1) {
+    -webkit-transform: translateY(-8px) scaleX(1);
+    transform: translateY(-8px) scaleX(1)
+}
+
+.ouamburger div:nth-child(2) {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1)
+}
+
+.ouamburger div:nth-child(3) {
+    -webkit-transform: translateY(8px) scaleX(1);
+    transform: translateY(8px) scaleX(1)
+}
+
+.ouamburger div:nth-child(4) {
+    -webkit-transform: rotate(45deg) scaleX(0);
+    transform: rotate(45deg) scaleX(0)
+}
+
+.ouamburger div:nth-child(5) {
+    -webkit-transform: rotate(-45deg) scaleX(0);
+    transform: rotate(-45deg) scaleX(0)
+}
+
+.js-nav-active .ouamburger div:nth-child(1) {
+    transition-delay: 0s
+}
+
+.js-nav-active .ouamburger div:nth-child(2) {
+    transition-delay: 50ms
+}
+
+.js-nav-active .ouamburger div:nth-child(3) {
+    transition-delay: .1s
+}
+
+.js-nav-active .ouamburger div:nth-child(4) {
+    transition-delay: .15s
+}
+
+.js-nav-active .ouamburger div:nth-child(5) {
+    transition-delay: .2s
+}
+
+.js-nav-active .ouamburger div:nth-child(1) {
+    -webkit-transform: translateY(-8px) scaleX(0);
+    transform: translateY(-8px) scaleX(0)
+}
+
+.js-nav-active .ouamburger div:nth-child(2) {
+    -webkit-transform: translateX(0) scaleX(0);
+    transform: translateX(0) scaleX(0)
+}
+
+.js-nav-active .ouamburger div:nth-child(3) {
+    -webkit-transform: translateY(8px) scaleX(0);
+    transform: translateY(8px) scaleX(0)
+}
+
+.js-nav-active .ouamburger div:nth-child(4) {
+    -webkit-transform: rotate(45deg) scaleX(1);
+    transform: rotate(45deg) scaleX(1)
+}
+
+.js-nav-active .ouamburger div:nth-child(5) {
+    -webkit-transform: rotate(-45deg) scaleX(1);
+    transform: rotate(-45deg) scaleX(1)
+}
+.ouamnav {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    transition: .5s cubic-bezier(.77, 0, .175, 1);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+.js-nav-active .ouamnav {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.ouamnav--back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    cursor: pointer;
+    background: white;
+    -webkit-transform: translateX(900000%);
+    transform: translateX(900000%);
+    opacity: 0;
+    transition: .5s opacity
+}
+
+.js-nav-show .ouamnav--back {
+    -webkit-transform: none;
+    transform: none
+}
+
+.js-nav-active .ouamnav--back {
+    opacity: .75
+}
+
+.ouamnav--lang {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 8px;
+    letter-spacing: -.3em
+}
+
+@media only screen and (max-width:660px) {
+    .ouamnav--lang {
+        top: 4px
+    }
+}
+
+.ouamnav--lang li {
+    letter-spacing: 0;
+    display: inline-block;
+    font-size: 22px;
+    font-size: 1.375rem
+}
+
+.ouamnav--lang li:before {
+    content: "";
+    width: 22px;
+    height: 2px;
+    background: white;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.ouamnav--lang li:first-child:before {
+    content: none
+}
+
+.ouamnav--lang li a {
+    text-decoration: none;
+  padding-left: -10%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden
+}
+
+.ouamnav--lang li a:after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    padding-left: -10%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: .15s
+}
+
+.ouamnav--lang li a:hover:after {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%)
+}
+
+.ouamnav--lang li.current-lang a:after {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.ouamnav--nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding-left: -10%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+html:not(.js-nav-show) .ouamnav--item {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px)
+}
+
+.ouamnav--link {
+    font-size: 40px;
+    font-size: 2.5rem;
+    font-family: Fabrik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    background: white;
+    padding: 12px;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 186px;
+}
+
+.ouamnav--link > div {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.ouamnav--beetween {
+    font-size: 12px;
+    font-size: .75rem;
+    font-family: Museo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: .21em;
+    text-transform: uppercase;
+    width: 0;
+    overflow: hidden;
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    transition: .4s cubic-bezier(.77, 0, .175, 1);
+    position: relative
+}
+
+@media only screen and (max-width:660px) {
+    .ouamnav--beetween {
+        display: none !important
+    }
+}
+
+@media only screen and (min-width:661px) and (max-width:989px) {
+    .ouamnav--beetween {
+        display: none !important
+    }
+}
+
+.ouamnav--beetween:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0,  10%);
+    transition: .4s
+}
+
+.ouamnav--link:hover .ouamnav--beetween:after {
+    transition: .5s;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%)
+}
+
+.ouamnav--stroke {
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 14px;
+    transition: inherit;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0)
+}
+
+.ouamnav--link:hover .ouamnav--stroke {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}
+
+.ouamnav--text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 18px;
+    transition: inherit;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+    font-weight: bold;
+}
+
+.ouamnav--link:hover .ouamnav--text {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+#color{
+  color:#B1F1FF;
+}
+
+
+#color1{
+  color:#ffdfba;
+}
+
+#color2{
+  color:#FFD1DC;
+}
+
+#color3{
+  color:#ff85a2;
+}
+
+ul{
+list-style-type: none;
+}
+
+#kalisong{
+  position: absolute;
+  width: 32.7%;
+  margin-left: 29.8%;
+  margin-top: 34%;
+  z-index: 6;
+  background: white;
+}
+
+#cherry{
+position: absolute;
+width: 35%;
+margin-top: 7%;
+}
+
+#cherry2{
+position: absolute;
+margin-left: 60%;
+margin-top: -8%;
+z-index: -1;
+width: 40%;
+}
+
+
+
+@media all and (max-width: 480px) {
+  img {
+    margin:10px auto;
+    float:none;
+    display:block;
+  }
+
+  #cherry{
+  display: none;
+  }
+
+  #cherry2{
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -10%;
+  z-index: -1;
+  width: 50%;
+  }
+.album{
+  margin-left: -5%;
+}
+
+#kalisong{
+  margin-top: 110%;
+}
+}

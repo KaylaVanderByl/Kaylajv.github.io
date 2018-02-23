@@ -1,0 +1,6 @@
+title: Kali
+theme: html
+subdomain: kali
+domain: www.kali.kaylavanderbyl.com
+badge: hide
+description: This is your site description which can be edited in the _sv_settings.txt file, another Small Victory.

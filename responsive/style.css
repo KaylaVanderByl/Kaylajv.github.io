@@ -1,0 +1,20 @@
+body{
+
+  overflow: none;
+
+}
+
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  background: #a0a0a0;
+  padding: 10px;
+  color:pink;
+
+}
+
+@media only screen and (max-width: 460px) {
+    body {
+        background-color: lightblue;
+    }
+}
