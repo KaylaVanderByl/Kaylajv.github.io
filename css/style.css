@@ -41,10 +41,18 @@ padding: 2em;
   font-weight: lighter;
 }
 
+#review{
+
+  text-align: right;
+  margin-top: -10%;
+  margin-left: 15%;
+  font-size: 19px;
+  font-weight: lighter;
+}
 #web{
   text-align: right;
-  margin-top: -4%;
-  margin-left: 29.5%;
+margin-top: -10%;
+  margin-left: -2%;
   font-size: 19px;
   font-weight: lighter;
 }
@@ -59,6 +67,9 @@ text-decoration: underline;
   text-decoration: underline;
 }
 
+#review:hover{
+    text-decoration: underline;
+}
 #lab:hover{
   text-decoration: underline;
 }
