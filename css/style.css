@@ -59,6 +59,16 @@ margin-top: -10%;
 #web:hover{
 text-decoration: underline;
 }
+#web2{
+  text-align: right;
+margin-top: -10%;
+  margin-left: -16%;
+  font-size: 19px;
+  font-weight: lighter;
+}
+#web2:hover{
+text-decoration: underline;
+}
 #studio:hover{
   text-decoration: underline;
 }
