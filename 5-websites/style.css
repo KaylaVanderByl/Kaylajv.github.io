@@ -189,6 +189,14 @@ height: auto;
 box-shadow: 10px 10px 5px grey;
 }
 
+#lis{
+  color: grey;
+  text-decoration:none;
+  }
+
+  #lis:hover{
+    text-decoration: underline;
+  }
 #thumbnail:hover + #title3 {
 display:flex;
 }
@@ -509,7 +517,4 @@ z-index: 1;
       margin-left: 70%;
       color: black;
       text-decoration: none;
-  }
-
-
   }
