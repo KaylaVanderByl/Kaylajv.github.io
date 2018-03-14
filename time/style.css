@@ -1,0 +1,43 @@
+body{
+color: white;
+  font-family: 'helvetica';
+  background: linear-gradient(270deg, #2cdbae, #2cd2db, #8f8df5, #e78df5);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+
+}
+
+button{
+
+  padding: 2em;
+}
+
+
+#txt{
+text-align: center;
+font-size:200%;
+}
+
+
+h1{
+font-size:400%;
+  text-align: center;
+}
