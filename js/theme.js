@@ -1,11 +1,13 @@
 
-document.getElementById("go").addEventListener("click", function() {
-  var feeling = document.getElementById("feeling").value;
-  var fav_color = document.getElementById("fav_color").value;
-  var greeting = document.getElementById("greeting2");
+
+
+$("#go").on("click", function() {
+  var feeling = $("#feeling").val();
+  var fav_color = $("#fav_color").val();
+  var greeting = $("#greeting2");
   if(feeling.toLowerCase() == "happy"){
     var greeting_1 = "Yay!";
-    greeting.style.font= "Permanent Marker";
+    $("font").css("Permanent Marker");
   }else if (feeling == "sad"){
     var greeting_1 = "Buy yourself an ice-cream to cheer up!";
   }else if (feeling == "tired"){
@@ -17,28 +19,28 @@ document.getElementById("go").addEventListener("click", function() {
 
 }else {
   var greeting_1 = "Nice!";
-    greeting.style.color ="black";
+    $("#greeting2").css("color","black");
 }
 
   if(fav_color.toLowerCase()=="red"){
     var greeting_2 ="<strong>My fav color is red too!</strong>";
-    greeting.style.color ="red";
+    $("#greeting2").css("color","red");
   }else if(fav_color =="blue"){
     var greeting_2 = "I don't like blue";
-      greeting.style.color ="blue";
+      $("#greeting2").css("color","blue");
   }else if(fav_color =="purple"){
     var greeting_2 = "That's awesome!";
-    greeting.style.color ="purple";
+    $("#greeting2").css("color","purple");
   }else if(fav_color =="yellow"){
     var greeting_2 = "Like the sun.";
-      greeting.style.color ="yellow";
+      $("#greeting2").css("color","yellow");
   }else if(fav_color =="green"){
     var greeting_2 = "The color of envy!";
-      greeting.style.color ="green";
+      $("#greeting2").css("color","green");
   }else {
     var greeting_2 = "Cool!";
-      greeting.style.color ="black";
+    $("#greeting2").css("color","black");
   }
 
-  greeting.innerHTML=greeting_1 + "<br/>" + greeting_2;
+  greeting.html (greeting_1 + "<br/>" + greeting_2);
 });
