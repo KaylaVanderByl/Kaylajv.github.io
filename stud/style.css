@@ -197,6 +197,16 @@ span:nth-child(5):hover ~ .bg {
   background-image: url("images/life2.gif");
 }
 
+body:after{
+    display:none;
+    content:
+    url("images/cul2.gif")
+    url("images/mus2.gif")
+    url("images/new2.gif")
+    url("images/art2.gif")
+    url("images/life2.gif")
+  
+}
  .row {
     display: -ms-flexbox;
     display: flex;
