@@ -197,17 +197,21 @@ span:nth-child(5):hover ~ .bg {
   background-image: url("images/life2.gif");
 }
 
-body:after{
-    display:none;
+body::after{
+    width:0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
     content:
     url("images/cul2.gif")
     url("images/mus2.gif")
     url("images/new2.gif")
     url("images/art2.gif")
     url("images/life2.gif")
-  
+
 }
- .row {
+ .row a img{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -232,7 +236,7 @@ margin-top: -12%;
 }
 
 
-.column {
+.column a img{
     -ms-flex: 15%;
     flex: 15%;
     max-width: 16.5%;
