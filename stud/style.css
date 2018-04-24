@@ -169,6 +169,7 @@ margin-top: 19.5%;
 margin-left: 4.8%;
 z-index: 100;
 }
+
 .bg {
   position: fixed;
   display: none;
@@ -2948,6 +2949,41 @@ font-size: 500%;
    .image-wrapper2:hover a img {
      transform: scale(1.08);
    }
+   .bg {
+     position: fixed;
+     display: none;
+     z-index: 1;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     pointer-events: none;
+     height: 100%;
+     background-position: center;
+     background-repeat: repeat;
+     background-size: cover;
+   }
+   .bg video {
+     min-width: 100vw;
+     min-height: 100vh;
+   }
+
+   span:first-child:hover ~ .cul {
+     display: block;
+   }
+   span:nth-child(2):hover ~ .mus {
+     display: block;
+   }
+   span:nth-child(3):hover ~ .new {
+     display: block;
+   }
+   span:nth-child(4):hover ~ .art {
+     display: block;
+   }
+   span:nth-child(5):hover ~ .life {
+     display: block;
+
+   }
   #layer1{
    position: absolute;
  width: 6.5%;
@@ -3918,7 +3954,41 @@ and (max-width: 3840px) and (-webkit-min-device-pixel-ratio: 1) {
   .image-wrapper2:hover a img {
    transform: scale(1.08);
   }
+  .bg {
+    position: fixed;
+    display: none;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  .bg video {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
 
+  span:first-child:hover ~ .cul {
+    display: block;
+  }
+  span:nth-child(2):hover ~ .mus {
+    display: block;
+  }
+  span:nth-child(3):hover ~ .new {
+    display: block;
+  }
+  span:nth-child(4):hover ~ .art {
+    display: block;
+  }
+  span:nth-child(5):hover ~ .life {
+    display: block;
+
+  }
   #layer1{
    position: absolute;
   width: 6.5%;
@@ -4845,4 +4915,5 @@ and (max-width: 3840px) and (-webkit-min-device-pixel-ratio: 1) {
   margin-left: -20%;
   }
 
+}
 }
