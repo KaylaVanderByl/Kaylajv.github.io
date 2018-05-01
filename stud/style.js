@@ -1,10 +1,26 @@
-function openNav() {
+
+
+  function openNav() {
     document.getElementById("myNav").style.height = "100%";
 }
 
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
+
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    $(".section").each(function(){
+      var x = $(window).scrollTop() + $(window).height();
+      var y = $(this).offset().top + ($(this).height() / 2);
+console.log($(window).scrollTop())
+      if (x >= y) {
+        $(this).addClass('active');
+      };
+    });
+  });
+});
 $(function() {
 
 
