@@ -386,7 +386,7 @@ margin-left: -50%;
 
 
 #nico{
-  padding: 7em 7em;
+  padding: 7.1em 7.1em;
   background: black;
 position: absolute;
   width: 35%;
@@ -1729,6 +1729,7 @@ margin-left: -30%;
   margin-left: 20%;
   font-size: 125%;
 }
+
 #protesttext2{
   position: absolute;
   font-family: ff-meta-serif-web-pro, serif;
@@ -1780,6 +1781,11 @@ margin-left: -30%;
   color:#f0dddd;
 }
 #dominimage{
+  width: 80%;
+  margin-left: -1%;
+  text-align: left;
+}
+#dominimage1{
   width: 80%;
   margin-left: -1%;
   text-align: left;
@@ -2155,7 +2161,7 @@ padding-bottom: 2em;
             position: absolute;
           z-index: 8;
           color: white;
-            font-size: 200%;
+            font-size: 250%;
             margin-top: 27%;
           }
           #nao:hover{
@@ -2829,8 +2835,8 @@ font-size: 500%;
           }
           #protestimage{
             width: 80%;
-            margin-left: 1%;
-            margin-top: 2%;
+            margin-left: -40%;
+            margin-top: 130%;
             position: absolute;
           }
           #protestimage2{
@@ -2847,10 +2853,10 @@ font-size: 500%;
           #protestimage5{
             width: 80%;
             margin-left: -80%;
-            margin-top: 385%;
+            margin-top: 388%;
           }
           #protestnames{
-            margin-top: 2%;
+            margin-top: 250%;
             font-size: 120%;
             text-align: center;
           }
@@ -2870,7 +2876,7 @@ font-size: 500%;
               display: none;
           }
           #protestnames6{
-            margin-top: 390%;
+            margin-top: 395%;
             font-size: 120%;
             text-align: left;
             width: 80%;
@@ -2927,6 +2933,18 @@ font-size: 500%;
             margin-left: -1%;
             text-align: left;
           }
+          #dominimage1{
+            margin-top: 90%;
+            width: 80%;
+            margin-left: -1%;
+            text-align: left;
+          }
+          #dominnames{
+            margin-top: 2%;
+            font-size: 120%;
+            text-align: center;
+          }
+
           #NAOarticle{
             font-size: 400%;
           }
@@ -2950,7 +2968,7 @@ font-size: 500%;
        flex: 12.5%;
        max-width: 12.5%;
        padding: 0 38px;
-       margin-top: -20%;
+       margin-top: -17%;
        z-index: -1;
        display:block;
        float:left;
@@ -3393,6 +3411,10 @@ margin-left: -30%;
   margin-top: 6%;
 }
 #protestnames{
+  font-size: 150%;
+  text-align: center;
+}
+#dominnames{
   font-size: 150%;
   text-align: center;
 }
@@ -4397,6 +4419,10 @@ and (max-width: 3840px) and (-webkit-min-device-pixel-ratio: 1) {
   margin-top: 6%;
   }
   #protestnames{
+  font-size: 150%;
+  text-align: center;
+  }
+  #dominnames{
   font-size: 150%;
   text-align: center;
   }
