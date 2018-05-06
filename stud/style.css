@@ -539,6 +539,27 @@ margin-top: 13.5%;
   margin-top: 12%;
   margin-bottom: 10%;
 }
+#lifehead3{
+  position:absolute;
+  color: white;
+  font-size: 350%;
+  margin-top: -69%;
+  width: 70%;
+  margin-left: 15%;
+   text-transform: uppercase;
+   opacity: 1;
+   transition: opacity .4s ease-in-out;
+   -moz-transition: opacity .4s ease-in-out;
+   -webkit-transition: opacity .4s ease-in-out;
+}
+#lifehead3:hover{
+  opacity: .4;
+}
+#life3{
+  width: 50%;
+  padding: 10em 23em;
+  background: black;
+}
 
 #art1{
 position: absolute;
@@ -718,6 +739,10 @@ color: black;
   margin-top: -28%;
 }
 #newsimage2{
+  width: 70%;
+  margin-top: -28%;
+}
+#newsimage3{
   width: 70%;
   margin-top: -28%;
 }
@@ -2410,6 +2435,22 @@ padding-bottom: 2em;
             width: 70%;
             height: auto;
           }
+          #lifehead3{
+            position:absolute;
+            color: white;
+            font-size: 130%;
+            margin-top: -96%;
+            width: 90%;
+            margin-left: 5%;
+             text-transform: uppercase;
+          }
+          #life3{
+            padding: 4em;
+            background: black;
+            width: 70%;
+            height: auto;
+            text-align: center;
+          }
           #naobyline{
             width: 90%;
             text-align: center;
@@ -3371,6 +3412,25 @@ font-size: 500%;
  #life2{
    margin-top: 12%;
    margin-bottom: 10%;
+ }
+ #life3{
+   padding: 7em 10em;
+   background: black;
+   width: 70%;
+ }
+
+
+ #lifehead3{
+   position:absolute;
+   color: white;
+   font-size: 350%;
+   margin-top: -89%;
+   width: 70%;
+   margin-left: 15%;
+    text-transform: uppercase;
+ }
+ #lifehead3:hover{
+   opacity: .4;
  }
    #protestopening{
      font-size: 160%;
