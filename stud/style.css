@@ -32,7 +32,7 @@ margin-top: .5%;
 opacity:.2;
   }
 
-  .section{
+  /* .section{
     transition: all .65s;
     opacity: 0;
   }
@@ -40,7 +40,7 @@ opacity:.2;
   .active,
   .section:first-child{
     opacity: 1;
-  }
+  } */
 
 #menu{
   position: fixed;
