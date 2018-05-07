@@ -32,6 +32,18 @@ margin-top: .5%;
 opacity:.2;
   }
 
+  .section{
+    transition: all .65s;
+    opacity: 0;
+  }
+
+  .section-1{ background: #449D44;}
+
+  .active,
+  .section:first-child{
+    opacity: 1;
+  }
+
 #menu{
   position: fixed;
   display: inline;
@@ -44,19 +56,6 @@ opacity:.2;
 
 }
 
-
-
-.section{
-  transition: all .65s;
-  opacity: 0;
-}
-
-.section-1{ background: #449D44;}
-
-.active,
-.section:first-child{
-  opacity: 1;
-}
 .overlay {
     height: 0%;
     width: 100%;
